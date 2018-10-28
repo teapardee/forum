@@ -1,0 +1,27 @@
+/* USER */
+
+.user {
+    display: flex;
+    grid-area: user;
+    font-size: 15px;
+    padding-right: 5px;
+    color: black;
+    letter-spacing: 2px;  
+    font-family: 'Helvetica Neue', sans-serif;
+    align-items: center;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.userimg {
+    display: flex;
+    grid-area: userimg;
+    height: 15px;
+    width: 15px;
+    margin:5px;
+    background: transparent url(user.png) no-repeat;
+    background-size: contain;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}

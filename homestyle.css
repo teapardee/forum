@@ -1,0 +1,39 @@
+/*HOME STYLE*/
+
+#home-mastgrid {
+    display: grid;
+    grid-template-columns: 1fr 33% 1fr;
+    grid-template-rows: 50px 50px 50px 100px 1fr;
+    grid-template-areas: 
+    " . . ."
+    " . home-title ."
+    ". home-borderbox .";
+  }
+
+.home-title {
+  grid-area: home-title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 2px; 
+  margin: 5px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: rgba(255,182,153,100);
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.home-subtitle {
+  grid-area: home-subtitle;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: rgba(255,182,153,1);
+  font-size: 15px;
+  letter-spacing: 5px;
+}
