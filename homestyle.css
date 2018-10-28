@@ -2,8 +2,8 @@
 
 #home-mastgrid {
     display: grid;
-    grid-template-columns: 1fr 33% 1fr;
-    grid-template-rows: 50px 50px 50px 100px 1fr;
+    grid-template-columns: 1fr 65% 15% 1fr;
+    grid-template-rows: 50px 500px 1fr;
     grid-template-areas: 
     " . . ."
     " . home-title ."
@@ -13,7 +13,7 @@
 .home-title {
   grid-area: home-title;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
@@ -36,4 +36,41 @@
   color: rgba(255,182,153,1);
   font-size: 15px;
   letter-spacing: 5px;
+}
+
+.home-nav {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+
+.home-navlink {
+  display: flex;
+  justify-content: flex-start;  
+  align-items: center;
+  height: 30px;
+  width: 228px;
+  background-color: transparent;
+  margin-bottom: 50px;
+  color: rgba(50,50,50,1);
+  font-family: 'Helvetica Neue', sans-serif;
+  letter-spacing: 2px;
+  border-bottom: 2px solid rgba(50,50,50,.5);
+  box-sizing: border-box; 
+}
+
+.home-arrow { 
+  float: right;
+  background: transparent url(arrow.png);
+  background-size: contain;
+  background-repeat:  no-repeat;        
+  height: 30px;
+  min-width: 30px;
+  box-sizing: border-box; 
+
+}
+
+
+
+
+
 }

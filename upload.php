@@ -5,22 +5,7 @@
 
 if(isset($_POST['submit'])) {
 
-	$link = mysqli_connect("localhost", "root", "", "login_system");
-
-	if($link === false){
-    die("ERROR: Could not connect. " . mysqli_connect_error());
-	}
-	 
-	// Attempt update query execution
-	$sql = "UPDATE users SET user_image='test' WHERE user_id=1;";
-	if(mysqli_query($link, $sql)){
-	    echo "Records were updated successfully.";
-	} else {
-	    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
-	}
- 
-// Close connection
-mysqli_close($link);
+	include_once 'dbh.inc.php';
 
 	$file = $_FILES['file'];
 
@@ -39,9 +24,12 @@ mysqli_close($link);
 		if($fileError === 0) {
 			if($fileSize < 1000000){
 				$fileNameNew = uniqid('', true).".".$fileActualExt;
-				$fileDestination = 'includes/uploads/'.$fileNameNew;
+				$fileDestination = 'uploads/'.$fileNameNew;
 				move_uploaded_file($fileTmpName, $fileDestination);
 
+				$uid = mysqli_real_escape_string($conn, $_POST['uid']);
+				$sql = "UPDATE login_system SET user_image = '$fileNameNew' WHERE user_uid='$uid'";
+				mysql_query($sql);
 
 				header("Location: user.php?uploadsuccess");
 			} else {
@@ -53,11 +41,7 @@ mysqli_close($link);
 	} else {
 		echo "You cannot upload files of this type!";
 	}
-} else {
-	header("Location: ../index.php")
 }
-
-
 
 
 

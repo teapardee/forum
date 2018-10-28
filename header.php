@@ -43,10 +43,13 @@
 							<li><a href="about.php">About</a></li>
 						</ul>
 					</nav>	
-					<div class="header-searchcontainer">
-						<form>
-							<input class="search" type="text" placeholder="JOIN THE DISCUSSION">
-						</form>
+					<div class="header-search">
+						<div class="header-searchcontainer">
+								<div class="header-searchimg"></div>
+								<form>
+									<input class="search" type="text" placeholder="Search">
+								</form>
+						</div>
 					</div>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 							$("a").each(function() {   
