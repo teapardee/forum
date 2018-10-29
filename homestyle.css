@@ -2,45 +2,81 @@
 
 #home-mastgrid {
     display: grid;
-    grid-template-columns: 1fr 65% 15% 1fr;
-    grid-template-rows: 50px 500px 1fr;
-    grid-template-areas: 
-    " . . ."
-    " . home-title ."
-    ". home-borderbox .";
+    grid-template-columns: 1fr 10% 30% 30% 10% 1fr;
+    grid-template-rows: 50px 300px 1fr;
   }
 
-.home-title {
-  grid-area: home-title;
+.home-title-container {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.home-title {
+  display: flex;
+  justify-content: flex-start;  
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  grid-row: 2/3;
+  grid-column: 2/4;
   letter-spacing: 2px; 
-  margin: 5px;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: bold;
+  height: 15%;
+  width: 100%;
   color: rgba(255,182,153,100);
   font-size: 20px;
   letter-spacing: 5px;
 }
 
-.home-subtitle {
-  grid-area: home-subtitle;
+#home-subtitle-one {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;  
   align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height:75%;
+  width: auto;
+  grid-row: 2/3;
+  grid-column: 2/3;
   font-family: 'Helvetica Neue', sans-serif;
   font-weight: bold;
-  color: rgba(255,182,153,1);
+  color: rgba(50,50,50,.5);
   font-size: 15px;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
+  list-style-type: none;
 }
 
-.home-nav {
+#home-subtitle-two {
+  display: flex;
+  justify-content: flex-start;  
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+
   grid-row: 2/3;
   grid-column: 3/4;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  width: auto;
+  color: rgba(50,50,50,.5);
+  font-size: 15px;
+  letter-spacing: 1px;
+  list-style-type: none;
+}
+
+
+
+
+.home-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  grid-row: 2/3;
+  grid-column: 5/6;
 }
 
 .home-navlink {
@@ -48,9 +84,8 @@
   justify-content: flex-start;  
   align-items: center;
   height: 30px;
-  width: 228px;
+  width: 100%;
   background-color: transparent;
-  margin-bottom: 50px;
   color: rgba(50,50,50,1);
   font-family: 'Helvetica Neue', sans-serif;
   letter-spacing: 2px;
@@ -66,11 +101,10 @@
   height: 30px;
   min-width: 30px;
   box-sizing: border-box; 
-
 }
 
 
 
 
 
-}
+
