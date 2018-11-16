@@ -5,19 +5,17 @@
 <html>
 <head>
 	<title></title>
-	<link rel="stylesheet" type="text/css" href="headerstyle.css">
-	<link rel="stylesheet" type="text/css" href="homestyle.css">
-	<link rel="stylesheet" type="text/css" href="forumstyle.css">
-	<link rel="stylesheet" type="text/css" href="userstyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/headerstyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/homestyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/forumstyle.css">
+	<link rel="stylesheet" type="text/css" href="styles/userstyle.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
-	<body>
-		<div class="header-background">
 			<div class="header-wrapper">
+				<div class="header-background"></div>
 				<a class="header-logo" href="index.php">soomersult</a>
-				<div class="header-blank"></div>
 				<div class="header-login">
 					<?php 
 						if(isset($_SESSION['u_id'])) {
@@ -35,12 +33,13 @@
 								}
 					?>	
 				</div>
+					
 					<nav>
 						<ul>
-							<li><a href="home.php">Home</a></li>
-							<li><a href="new.php">New</a></li>
-							<li><a href="top.php">Top</a></li>
-							<li><a href="about.php">About</a></li>
+							<li><a href="index.php">HOT</a></li>
+							<li><a href="new.php">NEW</a></li>
+							<li><a href="top.php">TOP</a></li>
+							<li><a href="home.php">WINS</a></li>
 						</ul>
 					</nav>	
 					<div class="header-search">
@@ -51,6 +50,7 @@
 								</form>
 						</div>
 					</div>
+					<div id="tab-border"></div>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
 							$("a").each(function() {   
 							    if (this.href == window.location.href) {
@@ -58,7 +58,6 @@
 							    }
 							});
 					</script>
-			</div>
+			
 		</div>
-	</body>
 </html>

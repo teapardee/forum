@@ -36,17 +36,22 @@
     background-position: right;
     margin-bottom: 30px;
     opacity: .75;
-
   }
 
-
+   #background-color {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    background: transparent url(color.png) repeat-y 0 0 fixed;
+    animation:animate linear 70s infinite alternate;
+    opacity: .5;
+    z-index: -500;
+   }
 
   .new-grid {
     display: grid;
-    flex-direction: column;
-    grid-template-columns: 2.5% 1fr 2.5%;
-    grid-template-rows: 25px 3000px;
-    overflow-x: hidden;
+    grid-template-columns: 4px 1fr 4px;
+    grid-template-rows: 1fr;
+
   }
 
   .new-post-container {
@@ -64,15 +69,17 @@
     grid-row: 1/2;
     grid-column: 2/3;
     border-bottom: 1px solid rgba(204,204,204,.5);
-
   }
 
   .new-post {
     display: grid;
-    grid-template-columns: 25px 75px 25px 1fr 10px 300px;
+    grid-template-columns: 25px 75px 25px 1fr 300px;
     grid-template-rows: 1fr;
+    background-color: #f3f3f3;
     height: 75px;
     width: 1fr;
+    margin-top: 5px;
+    opacity: 1;
     border-bottom: 1px solid rgba(204,204,204,.5);
 }
 
@@ -90,13 +97,13 @@
 
 .new-post:hover .userformat {
  animation-name: FadeInGrey;
- animation-duration: 3s;
+ animation-duration: 2s;
  animation-fill-mode: forwards; 
 }
 
 .new-post:hover .timeformat {
  animation-name: FadeInGrey;
- animation-duration: 3s;
+ animation-duration: 2s;
  animation-fill-mode: forwards;
 }
 
@@ -112,19 +119,19 @@
 
 .new-post:hover .new-save-1 {
  animation-name: FadeInBlue;
- animation-duration: 2s;
+ animation-duration: 1s;
  animation-fill-mode: forwards; 
 }
 
 .new-post:hover .new-comment-1 {
  animation-name: FadeInBlue;
- animation-duration: 2s;
+ animation-duration: 1s;
  animation-fill-mode: forwards; 
 }
 
 .new-post:hover .new-share-1 {
  animation-name: FadeInBlue;
- animation-duration: 2s;
+ animation-duration: 1s;
  animation-fill-mode: forwards; 
 }
 
@@ -200,10 +207,11 @@
 
   .new-poster-cell {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 20px 20px 35px;
     grid-row: 1/4;
     grid-column: 6/7;
+
   
 }
   .new-org {
@@ -393,7 +401,7 @@
     color: rgba(68,124,180,.25);
     font-family: 'Helvetica Neue', sans-serif;
     align-items: center;
-    justify-content: left;
+    justify-content: right;
     margin:5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -409,7 +417,6 @@
 .new-comment-1 {
     grid-row: 3/4;
     grid-column:1/2;
-
   }
 
 .new-share-1 {
@@ -424,5 +431,43 @@
 
 }
 
+/* revisit */
+#sort-tabs-border{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border-bottom: 1px solid rgba(204,204,204,.5);
+}
+
+#sort-tabs-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-left: 120px;
+
+}
+
+.sort-tabs {
+    display: flex;
+    border:1px solid white;
+    height: 30px;
+    border-radius: 5px;
+    letter-spacing: 2px; 
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin-right: 7.5px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    background: transparent url(color.png) repeat-y;
+    animation:animate linear 70s infinite alternate;
+}
 
 
+.sort-tabs.active {
+  margin-bottom: 20px;
+}

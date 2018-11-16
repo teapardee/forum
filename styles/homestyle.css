@@ -1,12 +1,11 @@
 /*HOME STYLE*/
 
-#home-mastgrid {
+.home-mastgrid {
     display: grid;
-    grid-template-columns: 1fr 10% 30% 30% 10% 1fr;
-    grid-template-rows: 50px 45px 255px 1fr;
-
-  }
-
+    grid-template-columns: 1fr 10% 35% 25% 10% 1fr;
+    grid-template-rows: 50px 45px 200px 50px;
+    border-bottom: 1px solid rgba(50,50,50,1)
+    }
 
 .home-title {
   display: flex;
@@ -47,6 +46,33 @@ li {
 }
 
 
+.home-collapse-button {
+  float: right;
+  position: absolute;
+  z-index: 50;
+  top: 445px;
+  right: 0;
+  margin:10px;
+  height: 40px;
+  width: 40px;  
+  background:  white url(collapsearrowsup.png);
+  background-size: 25px 25px;
+  background-repeat:  no-repeat; 
+  background-position: center;
+  border: 1px solid rgba(50,50,50,1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-collapse-button.active {
+    top: 100px;
+    background:  white url(collapsearrowsdown.png);
+    background-size: 25px 25px;
+    background-repeat:  no-repeat; 
+    background-position: center;
+    opacity: .5;
+    }
+
 .home-nav {
   display: flex;
   flex-direction: column;
@@ -80,8 +106,12 @@ li {
   box-sizing: border-box; 
 }
 
-
-
-
-
+#home-video-thumbnail {
+  grid-column: 4/6;
+  grid-row: 3/4;
+  margin: 0px 16px 16px 16px;
+  background: transparent url(videothumbnail.jpg);
+  background-size: 300px 168px;
+  background-repeat:  no-repeat;
+}
 
