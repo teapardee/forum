@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
     path = 'index.php';
   }
       
-  var target = $('nav a[href="'+path+'"]');
+  var target = $('.sub-nav a[href="'+path+'"]');
   // Add active class to target link
   target.addClass('active');
 });

@@ -33,16 +33,22 @@
 								}
 					?>	
 				</div>
-					
-					<nav>
-						<ul>
-							<li><a href="index.php">HOT</a></li>
-							<li><a href="new.php">NEW</a></li>
-							<li><a href="top.php">TOP</a></li>
-							<li><a href="home.php">WINS</a></li>
-						</ul>
-					</nav>	
+						<div class="super-nav">
+							<a href="index.php">HOME</a>
+							<a href="index.php">ORGS</a>
+							<a href="index.php">INFO</a>
+							<a href="index.php">TEAM</a>
+							<a href="index.php">CONTACT</a>
+						</div>	
+						<div class="sub-nav">
+							<a href="index.php">HOT</a>
+							<a href="new.php">NEW</a>
+							<a href="top.php">TOP</a>
+							<a href="home.php">WINS</a>
+						</div>	
+
 					<div class="header-search">
+						<div class="create-post">+ CREATE POST</div>
 						<div class="header-searchcontainer">
 								<div class="header-searchimg"></div>
 								<form>
@@ -50,14 +56,6 @@
 								</form>
 						</div>
 					</div>
-					<div id="tab-border"></div>
-					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-							$("a").each(function() {   
-							    if (this.href == window.location.href) {
-							        $(this).addClass("active");
-							    }
-							});
-					</script>
-			
+					<div id="tab-border"></div>			
 		</div>
 </html>

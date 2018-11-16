@@ -104,9 +104,9 @@ for (i = 0; i < coll.length; i++) {
 					<div onclick="downvote(this.parentNode.id)" class="new-vote-down"></div>
 				</div>
 				<div class="new-post-cell">
-					<div class="new-org">NIKE</div>
-					<div class="new-cat">SHOE DESIGN</div>
-					<div class="new-cat">ROSHE</div>
+					<div class="new-org">SOMERVILLE, MA</div>
+					<div class="new-cat">MUNICIPALITY</div>
+					<div class="new-cat">EDUCATION</div>
 					<div class="new-post-writing">This is a test post to see how things line up.</div>
 				</div>
 					<div class="new-poster-cell">
@@ -123,9 +123,9 @@ for (i = 0; i < coll.length; i++) {
 					<div onclick="downvote(this.parentNode.id)" class="new-vote-down"></div>
 				</div>
 				<div class="new-post-cell">
-					<div class="new-org">NIKE</div>
-					<div class="new-cat">SHOE DESIGN</div>
-					<div class="new-cat">ROSHE</div>
+					<div class="new-org">EA GAMES</div>
+					<div class="new-cat">BATTLEFRONT</div>
+					<div class="new-cat">PAY 2 PLAY</div>
 					<div class="new-post-writing">This is a test post to see how things line up.</div>
 				</div>
 					<div class="new-poster-cell">
@@ -142,9 +142,9 @@ for (i = 0; i < coll.length; i++) {
 					<div onclick="downvote(this.parentNode.id)" class="new-vote-down"></div>
 				</div>
 				<div class="new-post-cell">
-					<div class="new-org">NIKE</div>
-					<div class="new-cat">SHOE DESIGN</div>
-					<div class="new-cat">ROSHE</div>
+					<div class="new-org">JAGEX</div>
+					<div class="new-cat">RUNESCAPE</div>
+					<div class="new-cat">VANILLA</div>
 					<div class="new-post-writing">This is a test post to see how things line up.</div>
 				</div>
 					<div class="new-poster-cell">
@@ -161,9 +161,9 @@ for (i = 0; i < coll.length; i++) {
 					<div onclick="downvote(this.parentNode.id)" class="new-vote-down"></div>
 				</div>
 				<div class="new-post-cell">
-					<div class="new-org">NIKE</div>
-					<div class="new-cat">SHOE DESIGN</div>
-					<div class="new-cat">ROSHE</div>
+					<div class="new-org">EPIC GAMES</div>
+					<div class="new-cat">FORTNITE</div>
+					<div class="new-cat">UPDATE 3.4</div>
 					<div class="new-post-writing">This is a test post to see how things line up.</div>
 				</div>
 					<div class="new-poster-cell">

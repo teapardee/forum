@@ -29,15 +29,6 @@
   text-align: right;
 }
 
-li {
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  color: rgba(50,50,50,.5);
-  font-size: 15px;
-  letter-spacing: 1px;
-  list-style-type: none;
-  margin-bottom: 5px;
-}
 
 #home-subtitle-two {
   grid-row: 3/4;
